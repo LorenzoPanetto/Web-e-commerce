@@ -1,0 +1,11 @@
+
+
+.col-2 .sandwich {
+  width: 90%;
+}
+
+@media (max-width: 700px) {
+  .col-2 .sandwich {
+    width: 77%;
+  }
+}

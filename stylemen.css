@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border-spacing: 30px;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+th,
+td {
+  text-align: center;
+}
+.info {
+  width: 25%;
+}
+#salame,
+#strudel {
+  width: 40%;
+}
+#bigne,
+#tiramisu {
+  width: 50%;
+}
+#birra,
+#acqua,
+#bibita {
+  width: 30%;
+}

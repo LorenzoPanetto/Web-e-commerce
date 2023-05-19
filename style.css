@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  background-color: black;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1rem; /*16px*/
+}
+a:hover {
+  color: #ff9f0d;
+}
+header {
+  position: relative;
+  background: transparent;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+.logo img {
+  float: left;
+  width: 55px;
+}
+.navbar {
+  display: flex;
+  gap: 40px;
+}
+.menu {
+  width: 24px;
+  cursor: pointer;
+  display: none;
+}
+.active {
+  color: #ff9f0d;
+}
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  width: 300px;
+  z-index: 1000;
+  overflow: hidden;
+}
+.dropdown_menu.open {
+  height: 180px;
+}
+.dropdown_menu li {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.col-1 {
+  position: relative;
+  margin-left: 50px;
+}
+.col-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.col-1 p,
+.col-2 p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.col-1 h2,
+.col-2 h2 {
+  font-size: 54px;
+}
+.col-1 h3,
+.col-2 h3 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 20px 0 10px;
+  line-height: 2;
+}
+.col-1 h4,
+.col-2 h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  background: linear-gradient(to right, #ff9f0d, #ffc82d);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.box {
+  position: absolute;
+  background: linear-gradient(#ff9f0d, #ffb22d);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translateX(150px);
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    margin-bottom: 50px;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+}
